@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Luis Gustavo Silva Costa">
+    <meta name="Description" content="Brasa da Rua - hamburgueria artesanal">
+    <title>Brasa da Rua</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="logo">BRASA DA RUA <small>HAMBURGUERIA ARTESANAL</small></a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#historia">Nossa história</a></li>
+                <li><a href="#pedido">Como comprar</a></li>
+            </ul>
+        </nav>
+        <nav class="header-actions">
+            <a href="./login.html" class="btn btn-outline">Entrar</a>
+            <a href="./pagamento.html" class="btn btn-primary">Fazer pedido</a>
+        </nav>
+    </header>
+
+    <main id="inicio">
+        <div class="main-content">
+            <p class="category">♨ A MELHOR BRASA DA CIDADE</p>
+            <h1>Seu próximo<br>burger favorito sai<br>da brasa.</h1>
+            <p>Feito na hora, do seu jeito, com ingredientes de verdade. Da brasa para sua mesa, sem enrolação.</p>
+            <nav>
+                <a href="#cardapio" class="btn btn-primary">Ver cardápio ↗</a>
+                <a href="#historia" class="btn btn-outline">Conheça a casa</a>
+            </nav>
+            <p class="small-text">◷ Peça no seu ritmo. A brasa não para.</p>
+        </div>
+        <div class="main-image">
+            <img src="./src/assets/images/classico.jpg" alt="Hambúrguer artesanal">
+            <p>Brasa Clássico · R$ 29,90</p>
+        </div>
+    </main>
+
+    <section class="section-statistics">
+        <div><h2>♨ Brasa de verdade</h2><p>Sabor que se sente</p></div>
+        <div><h2>✦ Feito na hora</h2><p>Da chapa para você</p></div>
+        <div><h2>♨ Fome bem resolvida</h2><p>Do primeiro ao último pedaço</p></div>
+        <div><h2>↗ Vai quentinho</h2><p>Para levar ou receber</p></div>
+    </section>
+
+    <section class="section-records" id="cardapio">
+        <p class="category">NOS FAVORITOS DA CASA</p>
+        <h2>Os favoritos da rua</h2>
+        <p>Os queridinhos de quem já provou. Escolha o seu próximo favorito.</p>
+        <div class="records-container">
+            <div class="records-card">
+                <img src="./src/assets/images/classico.jpg" alt="Brasa Clássico">
+                <h3>Brasa Clássico</h3><p>Carne na chapa, queijo, salada e molho da casa.</p>
+                <div><p class="price">R$ 29,90</p><button class="btn-primary add-item" data-name="Brasa Clássico" data-price="29.90">Adicionar</button></div>
+            </div>
+            <div class="records-card">
+                <img src="./src/assets/images/duplo.jpg" alt="Duplo da Rua">
+                <h3>Duplo da Rua</h3><p>Dois burgers, queijo derretido e molho especial.</p>
+                <div><p class="price">R$ 39,90</p><button class="btn-primary add-item" data-name="Duplo da Rua" data-price="39.90">Adicionar</button></div>
+            </div>
+            <div class="records-card">
+                <img src="./src/assets/images/verde.jpg" alt="Verde na Brasa">
+                <h3>Verde na Brasa</h3><p>Uma opção cheia de sabor, frescor e personalidade.</p>
+                <div><p class="price">R$ 34,90</p><button class="btn-primary add-item" data-name="Verde na Brasa" data-price="34.90">Adicionar</button></div>
+            </div>
+            <div class="records-card">
+                <img src="./src/assets/images/batata.jpg" alt="Batata da Casa">
+                <h3>Batata da Casa</h3><p>Batata crocante para acompanhar seu burger.</p>
+                <div><p class="price">R$ 16,00</p><button class="btn-primary add-item" data-name="Batata da Casa" data-price="16.00">Adicionar</button></div>
+            </div>
+        </div>
+        <a href="./pagamento.html" class="btn btn-outline-dark">Ver minha sacola ↗</a>
+    </section>
+
+    <section class="section-highlights" id="historia">
+        <img src="./src/assets/images/ambiente.jpg" alt="Ambiente da hamburgueria" class="highlights-image">
+        <div class="highlights-content">
+            <p class="category">NOSSA HISTÓRIA</p>
+            <h2>Uma esquina, uma brasa e muita história boa.</h2>
+            <p>A Brasa da Rua nasceu da vontade de juntar comida feita com cuidado, conversa boa e o sabor que fica na memória.</p>
+            <p>É o nosso jeito de servir: na chapa, no ponto e sem complicação.</p>
+            <nav><a href="#pedido" class="btn btn-primary">Conheça mais</a><a href="#cardapio" class="btn btn-outline">Fazer um pedido</a></nav>
+        </div>
+    </section>
+
+    <section class="section-order" id="pedido">
+        <h2>Seu burger, do seu jeito</h2>
+        <p>Na mesa, em casa ou a caminho: escolha como quer viver a experiência.</p>
+        <div class="order-options">
+            <article><h3>Na nossa casa</h3><img src="./src/assets/images/ambiente.jpg" alt="Mesas da casa"><p>Venha sentir o clima da nossa hamburgueria.</p><a href="./pagamento.html">Escolher retirada ↗</a></article>
+            <article><h3>Na sua casa</h3><img src="./src/assets/images/classico.jpg" alt="Hambúrguer para entrega"><p>Peça seus favoritos e receba com comodidade.</p><a href="./pagamento.html">Pedir delivery ↗</a></article>
+            <article><h3>No seu caminho</h3><img src="./src/assets/images/verde.jpg" alt="Pedido para levar"><p>Faça seu pedido e retire quando estiver pronto.</p><a href="./pagamento.html">Pedir para levar ↗</a></article>
+        </div>
+    </section>
+    <div class="page-footer"><a href="./index.html" class="logo">BRASA DA RUA <small>HAMBURGUERIA ARTESANAL</small></a><p>O calor da brasa. A alma da rua.</p><p>Projeto acadêmico · SENAI</p></div>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>

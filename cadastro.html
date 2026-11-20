@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro · Brasa da Rua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <header class="simple-header">
+        <a href="./index.html" class="logo">BRASA DA RUA <small>HAMBURGUERIA ARTESANAL</small></a>
+        <nav><a href="./index.html">Voltar ao cardápio</a><a href="./pagamento.html">Finalizar pedido</a></nav>
+    </header>
+    <main class="login-page">
+        <div class="login-intro">
+            <img src="./src/assets/images/amigos.jpg" alt="Amigos reunidos na hamburgueria">
+            <p class="login-tag">♨ A BRASA É NOSSA, A MESA É SUA</p>
+            <h1>Chega mais, a mesa é sua.</h1>
+            <p>Entre na sua conta para deixar o seu pedido do seu jeito.</p>
+        </div>
+        <form class="login-form" id="registro">
+            <h2>Crie sua conta</h2>
+            <p class="field-label">Nome</p><input id="nome" autocomplete="name" required>
+            <p class="field-label">E-mail</p>
+            <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+            <p class="field-label">Senha</p>
+            <input type="password" id="senha" placeholder="Digite sua senha" required>
+            <button class="btn-primary" type="submit">Criar minha conta</button>
+            <p class="message" id="login-message"></p>
+            <p class="form-note">Já tem conta? <a href="./login.html">Entrar</a></p></form>
+    </main>
+    <div class="page-footer simple-footer"><p>© 2026 Brasa da Rua</p><p>Feito com fogo, servido com atitude.</p></div>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>
+

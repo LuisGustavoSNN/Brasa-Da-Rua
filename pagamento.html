@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega e pagamento · Brasa da Rua</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/style.css">
+</head>
+<body>
+    <header class="simple-header">
+        <a href="./index.html" class="logo">BRASA DA RUA <small>HAMBURGUERIA ARTESANAL</small></a>
+        <nav><a href="./index.html#cardapio">Voltar ao cardápio</a><a href="./login.html">Precisa de ajuda?</a></nav>
+    </header>
+    <section class="checkout-page">
+        <p class="breadcrumb">Cardápio › Sacola › Entrega e pagamento</p>
+        <h1>Quase saindo da brasa.</h1>
+        <p>Confira seus dados e escolha como pagar.</p>
+        <div class="checkout-columns">
+            <form id="checkout-form">
+                <div class="checkout-box">
+                    <h2>1 Quem vai receber</h2>
+                    <p class="field-label">Nome</p><input id="nome" placeholder="Seu nome" required>
+                    <p class="field-label">Contato</p><input id="contato" type="tel" placeholder="(11) 99999-9999" required>
+                </div>
+                <div class="checkout-box">
+                    <h2>2 Onde a brasa chega</h2>
+                    <div class="choice"><p><input type="radio" name="entrega" value="entrega" checked> Entrega</p><p><input type="radio" name="entrega" value="retirada"> Retirada na loja</p></div>
+                    <div id="address-fields">
+                        <div class="two-fields"><div><p class="field-label">CEP</p><input id="cep" placeholder="05400-000"></div><div><p class="field-label">Cidade / UF</p><input id="cidade" placeholder="São Paulo / SP"></div></div>
+                        <p class="field-label">Rua / Avenida</p><input id="rua" placeholder="Rua Aurora do Bairro">
+                        <div class="two-fields"><div><p class="field-label">Número</p><input id="numero" placeholder="82"></div><div><p class="field-label">Complemento (opcional)</p><input id="complemento" placeholder="Apto 24"></div></div>
+                        <p class="field-label">Bairro</p><input id="bairro" placeholder="Vila Aurora">
+                        <p class="notice">◷ Entrega estimada em 35–50 min · Taxa de entrega: R$ 6,00</p>
+                    </div>
+                </div>
+                <div class="checkout-box">
+                    <h2>3 Como você quer pagar?</h2>
+                    <div class="choice"><p><input type="radio" name="pagamento" value="pix" checked> Pix</p><p><input type="radio" name="pagamento" value="cartao"> Cartão de crédito</p></div>
+                </div>
+            </form>
+            <aside class="checkout-summary">
+                <h2>Sua sacola <small id="item-count">0 itens</small></h2>
+                <div id="cart-items"></div>
+                <a href="./index.html#cardapio" class="edit-link">Editar itens do pedido</a>
+                <hr>
+                <div class="summary-line"><p>Subtotal</p><p id="subtotal">R$ 0,00</p></div>
+                <div class="summary-line"><p>Entrega</p><p id="delivery">R$ 6,00</p></div>
+                <div class="summary-line total"><p class="total-label">Total</p><p id="grand-total">R$ 0,00</p></div>
+                <button type="submit" form="checkout-form" class="btn-primary confirm">Conferir pedido</button>
+                <p class="small-text" id="checkout-message"></p>
+            </aside>
+        </div>
+    </section>
+    <div class="page-footer simple-footer"><p>© 2026 Brasa da Rua</p><p>O calor da brasa. A alma da rua.</p></div>
+    <script src="./src/scripts/main.js"></script>
+</body>
+</html>
